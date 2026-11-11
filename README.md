@@ -23,21 +23,23 @@ Key capabilities:
 
 **Classification criteria:**
 
-| Delta-T    | Classification |
-| Below 10°C | Normal         |
-| 10–25°C    | Watch          |
-| Above 25°C | Warning        |
+| Delta-T | Classification |
+| --- | --- |
+| Below 10°C | Normal |
+| 10–25°C | Watch |
+| Above 25°C | Warning |
 
 ## 2. Threshold Sensitivity Analysis
 
 Different thresholds were tested to evaluate their effect on hotspot detection.
 
 | Threshold | Hot pixels | Regions | Region sizes |
-| 73°C      | 178        | 2       | 120, 58      |
-| 74°C      | 159        | 2       | 114, 45      |
-| 75°C      | 146        | 2       | 103, 43      |
-| 76°C      | 129        | 2       | 92, 37       |
-| 80°C      | 97         | 2       | 76, 21       |
+| --- | --- | --- | --- |
+| 73°C | 178 | 2 | 120, 58 |
+| 74°C | 159 | 2 | 114, 45 |
+| 75°C | 146 | 2 | 103, 43 |
+| 76°C | 129 | 2 | 92, 37 |
+| 80°C | 97 | 2 | 76, 21 |
 
 **Selected threshold: 75°C.** I tested several threshold to see which one best fitted the given dataset. Although both the hotspots remained identifiable with all the 5 threshold values I tested, I chose 75°C because it detected a sizeable amount of regions. 
 
@@ -45,7 +47,8 @@ Different thresholds were tested to evaluate their effect on hotspot detection.
 
 **Overall asset temperature comparison**
 
-| Parameter        | Asset A | Asset B |
+| Parameter | Asset A | Asset B |
+| --- | --- | --- |
 | Mean temperature | 69.36°C | 69.17°C |
 
 Difference between asset mean temperatures: **0.19°C**.
@@ -53,7 +56,8 @@ Difference between asset mean temperatures: **0.19°C**.
 **Hotspot detection and Delta-T results**
 
 | Parameter | Hotspot 1 | Hotspot 2 |
-| Asset     | A         | B         |
+| --- | --- | --- |
+| Asset | A | B |
 | Peak temperature | 117.49°C | 94.41°C |
 | Mean temperature | 89.75°C | 81.96°C |
 | Pixel count | 103 | 43 |
